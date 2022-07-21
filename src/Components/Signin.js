@@ -25,7 +25,7 @@ function Signin() {
      
     }
     console.log(data)
-    axios.post(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${key}`, data)
+    axios.post("https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA0EUtvVqrkIgmWOV4mB4z6et46B6qiYl8", data)
     .then(res => {
       console.log(res)
       if(res.status===200)
